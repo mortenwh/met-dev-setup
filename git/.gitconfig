@@ -69,8 +69,7 @@
   cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
 
 [github]
-  user = gauteh
-  gist-oauth-token = 83b66c3f7d7ba911172795c5f17233e3b0fcde65
+  user = mortenwh
 
 [core]
   excludesfile = ~/.gitignore_global

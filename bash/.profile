@@ -41,9 +41,6 @@ if [[ -e "$HOME/.cargo/env" ]]; then
   source "$HOME/.cargo/env"
 fi
 
-# Nix
-if [ -e /home/gauteh/.nix-profile/etc/profile.d/nix.sh ]; then . /home/gauteh/.nix-profile/etc/profile.d/nix.sh; fi
-
 export EDITOR=nvim
 if which exa > /dev/null ; then
   export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -51,6 +48,8 @@ if which exa > /dev/null ; then
 fi
 
 ## Aliases
+alias l='ls -hlrt --color'
+alias ..='cd ..'
 alias g=gvim
 alias vi=nvim
 alias vim=nvim
